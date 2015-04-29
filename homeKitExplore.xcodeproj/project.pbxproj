@@ -13,6 +13,8 @@
 		D42904531AF13EBB00A2A98D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D42904521AF13EBB00A2A98D /* Images.xcassets */; };
 		D42904561AF13EBB00A2A98D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D42904541AF13EBB00A2A98D /* LaunchScreen.xib */; };
 		D42904621AF13EBB00A2A98D /* homeKitExploreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42904611AF13EBB00A2A98D /* homeKitExploreTests.swift */; };
+		D429046C1AF13F9600A2A98D /* HomeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D429046B1AF13F9600A2A98D /* HomeKit.framework */; };
+		D429046F1AF1403700A2A98D /* HomeKit Accessory Simulator.app in Resources */ = {isa = PBXBuildFile; fileRef = D429046E1AF1403700A2A98D /* HomeKit Accessory Simulator.app */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,9 @@
 		D429045B1AF13EBB00A2A98D /* homeKitExploreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = homeKitExploreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D42904601AF13EBB00A2A98D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D42904611AF13EBB00A2A98D /* homeKitExploreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeKitExploreTests.swift; sourceTree = "<group>"; };
+		D429046B1AF13F9600A2A98D /* HomeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HomeKit.framework; path = System/Library/Frameworks/HomeKit.framework; sourceTree = SDKROOT; };
+		D429046D1AF13F9600A2A98D /* homeKitExplore.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = homeKitExplore.entitlements; sourceTree = "<group>"; };
+		D429046E1AF1403700A2A98D /* HomeKit Accessory Simulator.app */ = {isa = PBXFileReference; lastKnownFileType = wrapper.application; path = "HomeKit Accessory Simulator.app"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D429046C1AF13F9600A2A98D /* HomeKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +65,8 @@
 		D429043D1AF13EBB00A2A98D = {
 			isa = PBXGroup;
 			children = (
+				D429046E1AF1403700A2A98D /* HomeKit Accessory Simulator.app */,
+				D429046B1AF13F9600A2A98D /* HomeKit.framework */,
 				D42904481AF13EBB00A2A98D /* homeKitExplore */,
 				D429045E1AF13EBB00A2A98D /* homeKitExploreTests */,
 				D42904471AF13EBB00A2A98D /* Products */,
@@ -77,6 +85,7 @@
 		D42904481AF13EBB00A2A98D /* homeKitExplore */ = {
 			isa = PBXGroup;
 			children = (
+				D429046D1AF13F9600A2A98D /* homeKitExplore.entitlements */,
 				D429044B1AF13EBB00A2A98D /* AppDelegate.swift */,
 				D429044D1AF13EBB00A2A98D /* ViewController.swift */,
 				D429044F1AF13EBB00A2A98D /* Main.storyboard */,
@@ -161,6 +170,12 @@
 				TargetAttributes = {
 					D42904451AF13EBB00A2A98D = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = K3U89M2X5J;
+						SystemCapabilities = {
+							com.apple.HomeKit = {
+								enabled = 1;
+							};
+						};
 					};
 					D429045A1AF13EBB00A2A98D = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -195,6 +210,7 @@
 				D42904511AF13EBB00A2A98D /* Main.storyboard in Resources */,
 				D42904561AF13EBB00A2A98D /* LaunchScreen.xib in Resources */,
 				D42904531AF13EBB00A2A98D /* Images.xcassets in Resources */,
+				D429046F1AF1403700A2A98D /* HomeKit Accessory Simulator.app in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,9 +358,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = homeKitExplore/homeKitExplore.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = homeKitExplore/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -352,9 +372,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = homeKitExplore/homeKitExplore.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = homeKitExplore/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
