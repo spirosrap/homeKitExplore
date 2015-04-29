@@ -14,7 +14,6 @@
 		D42904561AF13EBB00A2A98D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D42904541AF13EBB00A2A98D /* LaunchScreen.xib */; };
 		D42904621AF13EBB00A2A98D /* homeKitExploreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42904611AF13EBB00A2A98D /* homeKitExploreTests.swift */; };
 		D429046C1AF13F9600A2A98D /* HomeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D429046B1AF13F9600A2A98D /* HomeKit.framework */; };
-		D429046F1AF1403700A2A98D /* HomeKit Accessory Simulator.app in Resources */ = {isa = PBXBuildFile; fileRef = D429046E1AF1403700A2A98D /* HomeKit Accessory Simulator.app */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +39,6 @@
 		D42904611AF13EBB00A2A98D /* homeKitExploreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeKitExploreTests.swift; sourceTree = "<group>"; };
 		D429046B1AF13F9600A2A98D /* HomeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HomeKit.framework; path = System/Library/Frameworks/HomeKit.framework; sourceTree = SDKROOT; };
 		D429046D1AF13F9600A2A98D /* homeKitExplore.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = homeKitExplore.entitlements; sourceTree = "<group>"; };
-		D429046E1AF1403700A2A98D /* HomeKit Accessory Simulator.app */ = {isa = PBXFileReference; lastKnownFileType = wrapper.application; path = "HomeKit Accessory Simulator.app"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +63,6 @@
 		D429043D1AF13EBB00A2A98D = {
 			isa = PBXGroup;
 			children = (
-				D429046E1AF1403700A2A98D /* HomeKit Accessory Simulator.app */,
 				D429046B1AF13F9600A2A98D /* HomeKit.framework */,
 				D42904481AF13EBB00A2A98D /* homeKitExplore */,
 				D429045E1AF13EBB00A2A98D /* homeKitExploreTests */,
@@ -210,7 +207,6 @@
 				D42904511AF13EBB00A2A98D /* Main.storyboard in Resources */,
 				D42904561AF13EBB00A2A98D /* LaunchScreen.xib in Resources */,
 				D42904531AF13EBB00A2A98D /* Images.xcassets in Resources */,
-				D429046F1AF1403700A2A98D /* HomeKit Accessory Simulator.app in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
