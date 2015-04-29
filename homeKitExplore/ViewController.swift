@@ -20,6 +20,8 @@ class ViewController: UIViewController,HMHomeManagerDelegate {
             home,error in
             if error != nil{
                 println(error)
+                println(self.homeManager.homes)
+
             }else{
                 println(home)
                 println(self.homeManager.homes)
@@ -27,7 +29,8 @@ class ViewController: UIViewController,HMHomeManagerDelegate {
             }
         }
         
-        println(self.homeManager.homes)
+
+        
 
     }
     
