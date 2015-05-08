@@ -1,2 +1,2 @@
 # homeKitExplore
-An application to manage basic home automation using apple's HomeKit
+Managing basic home automation using apple's HomeKit. Basic setup done for educational purposes. Does not have other use.
